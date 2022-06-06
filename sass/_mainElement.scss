@@ -1,0 +1,100 @@
+@use "generalStyles" as *;
+@use "variables" as *;
+
+main {
+    width: 100%;
+}
+
+.main__container {
+    // outline: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include general;
+}
+
+.hero__text {
+    // outline: 1px solid red;
+    // margin-top: 1rem;
+    text-align: center;
+}
+
+.title {
+    font-size: 2rem;
+    color: $offwhite;
+    font-family: $Barlow;
+    letter-spacing: 0.27rem;
+    display: block;
+    padding: 1rem 0;
+    text-transform: uppercase;
+}
+
+.main__container h1 {
+    font-size: 8rem;
+    color: $White;
+    font-family: $Bellefair;
+    text-transform: uppercase;
+}
+
+.main__container p {
+    color: $offwhite;
+    font-size: 2rem;
+    font-family: $Barlow;
+    text-align: center;
+    // letter-spacing: 0.05rem;
+}
+
+.circle {
+    // outline: 1px solid white;
+    width: 150px;
+    height: 150px;
+    margin-top: 7rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background-color: $White;
+
+    span {
+        color: black;
+        font-size: 2rem;
+        text-transform: uppercase;
+        display: block;
+    }
+}
+
+@media (max-width: 360px) {
+    .title {
+        padding: .2rem;
+        font-size: 1.5rem;
+    }
+
+    .main__container h1 {
+        font-size: 6.2rem;
+    }
+
+    .main__container p {
+        font-size: 1.8rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+@use "variables" as *;
+@use "generalStyles" as *;
+
+body {
+    background-image: url('../assets/home/background-home-mobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}

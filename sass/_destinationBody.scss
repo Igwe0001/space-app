@@ -1,0 +1,8 @@
+@use "variables" as *;
+@use "generalStyles" as *;
+
+.destination-body {
+    background-image: url('../assets/destination/background-destination-mobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}

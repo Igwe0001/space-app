@@ -1,0 +1,308 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  scrollbar-width: thin;
+}
+
+html, body {
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+header {
+  width: 100%;
+  height: 9rem;
+}
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(45px);
+          backdrop-filter: blur(45px);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+nav ul {
+  margin-bottom: 25rem;
+}
+nav a {
+  text-decoration: none;
+  padding: 1.2rem 3rem;
+  display: block;
+  font-size: 1.6rem;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 2.7px;
+  color: rgba(255, 255, 255, 0.5);
+}
+nav a span {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.hamburger {
+  z-index: 1000;
+}
+
+.show-nav {
+  -webkit-transform: translateX(30%);
+          transform: translateX(30%);
+}
+
+@media (max-width: 360px) {
+  nav ul {
+    margin-bottom: 10rem;
+  }
+}
+body {
+  background-image: url("../assets/home/background-home-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main {
+  width: 100%;
+}
+
+.main__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.hero__text {
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 0.27rem;
+  display: block;
+  padding: 1rem 0;
+  text-transform: uppercase;
+}
+
+.main__container h1 {
+  font-size: 8rem;
+  color: #ffffff;
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+}
+
+.main__container p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 2rem;
+  font-family: "Barlow Condensed", sans-serif;
+  text-align: center;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  margin-top: 7rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.circle span {
+  color: black;
+  font-size: 2rem;
+  text-transform: uppercase;
+  display: block;
+}
+
+@media (max-width: 360px) {
+  .title {
+    padding: 0.2rem;
+    font-size: 1.5rem;
+  }
+
+  .main__container h1 {
+    font-size: 6.2rem;
+  }
+
+  .main__container p {
+    font-size: 1.8rem;
+  }
+}
+.destination-body {
+  background-image: url("../assets/destination/background-destination-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.destination-title {
+  padding: 0;
+  color: #ffffff;
+}
+
+.sub-span {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.page-image {
+  width: 17rem;
+  height: 17rem;
+  margin: 1.5rem auto;
+  display: none;
+}
+
+.btn {
+  font-size: 2rem;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  margin: 0 1rem;
+  font-family: "Barlow Condensed", sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-title {
+  font-size: 7.7rem;
+  font-family: "Bellefair", serif;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 100;
+  text-align: center;
+}
+
+.tab-text {
+  padding-bottom: 4rem;
+  margin-top: -2rem;
+  border-bottom: 0.1px solid rgba(255, 255, 255, 0.2);
+}
+
+.score {
+  text-align: center;
+}
+
+.scored {
+  margin: 2rem 0;
+}
+
+.tab-data-1 {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.tab-data-2 {
+  font-size: 3rem;
+  font-family: "Bellefair", serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.tab-active {
+  display: initial;
+}

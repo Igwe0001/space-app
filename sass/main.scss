@@ -1,0 +1,9 @@
+@use "generalStyles" as *;
+@use "variables" as *;
+@use "header" as *;
+@use "body" as *;
+@use "mainElement" as *; 
+
+//Destination Page 
+@use "destinationBody" as *;
+@use "destinationMain" as *;

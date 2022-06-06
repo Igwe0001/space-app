@@ -1,0 +1,85 @@
+@use "generalStyles" as *;
+@use "variables" as *;
+
+header {
+//   outline: 1px solid white;
+  width: 100%;
+  height: 9rem;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include general;
+}
+
+nav {
+//   outline: 1px solid white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: $offwhite;
+
+  //Flex Container
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: transparent;
+  // opacity: .5;
+
+  backdrop-filter: blur(45px);
+  transform: translateX(100%);
+//   transform: translateX(30%);
+  transition: all 0.5s ease;
+
+  ul {
+    // outline: 1px solid limegreen;
+    margin-bottom: 25rem;
+  }
+
+//   li {
+//     outline: 1px solid yellow;
+//     // padding: 2rem;
+//   }
+
+  a {
+    text-decoration: none;
+    padding: 1.2rem 3rem;
+    display: block;
+    font-size: 1.6rem;
+    font-family: $Barlow;
+    letter-spacing: 2.7px;
+     color: $offwhite;
+
+    span {
+      font-weight: bold;
+      color: $White;
+    }
+  }
+}
+
+.hamburger {
+  z-index: 1000;
+}
+
+//Fucntion Classes
+.show-nav {
+  transform: translateX(30%);
+//   visibility: visible;
+}
+
+
+
+
+
+//media queries
+@media (max-width: 360px) {
+    nav ul {
+        margin-bottom: 10rem;
+    }
+}

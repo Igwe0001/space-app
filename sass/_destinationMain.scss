@@ -1,0 +1,91 @@
+@use "generalStyles" as *;
+@use "variables" as *;
+
+.destination-title {
+    padding: 0;
+    color: $White;
+}
+
+.sub-span {
+    color: $offwhite;
+}
+
+.page-image {
+    width: 17rem;
+    height: 17rem;
+    margin: 1.5rem auto;
+    display: none;
+}
+
+.btn {
+    font-size: 2rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    margin: 0 1rem;
+    font-family: $Barlow;
+    color: $offwhite;
+    letter-spacing: .2rem;
+    cursor: pointer;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-title {
+    font-size: 7.7rem;
+    font-family: $Bellefair;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 100;
+    text-align: center;
+}
+
+.tab-text {
+    padding-bottom: 4rem;
+    margin-top: -2rem;
+    border-bottom: .1px solid $downWhite;
+}
+
+.score {
+    // margin-top: 2rem;
+    text-align: center;
+}
+
+.scored {
+    margin: 2rem 0;
+}
+
+.tab-data-1 {
+    font-size: 1.5rem;
+    color: $offwhite;
+    font-family: $Barlow;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+
+.tab-data-2 {
+    font-size: 3rem;
+    font-family: $Bellefair;
+    color: $White;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+
+
+
+.tab-active {
+    display: initial;
+}
+
+
+
+
+
+
+
+
+
+
