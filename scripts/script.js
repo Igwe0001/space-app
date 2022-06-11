@@ -1,11 +1,16 @@
+//Nav-icon handles
 const hamburger = document.querySelector(".hamburger");
 const nav = document.querySelector("nav");
 
+//Tab Handles
 const tabs = document.querySelectorAll(".operations__tab");
 const tabsContainer = document.querySelector(".operations__tab-container");
 const tabContent = document.querySelectorAll(".tab-content");
 const tabImage = document.querySelectorAll(".page-image");
 
+
+
+//Nav-icon 
 let toggle = true;
 
 hamburger.addEventListener("click", () => {
@@ -18,6 +23,8 @@ hamburger.addEventListener("click", () => {
   toggle = !toggle;
 });
 
+
+//Tab
 tabsContainer.addEventListener("click", (e) => {
   const clicked = e.target.closest(".operations__tab");
 
@@ -37,3 +44,5 @@ tabsContainer.addEventListener("click", (e) => {
     .querySelector(`.page-image-${clicked.dataset.tab}`)
     .classList.add("tab-active");
 });
+
+
