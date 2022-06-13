@@ -442,3 +442,130 @@ main {
   opacity: 0.8;
   margin-top: 1rem;
 }
+
+.tech-body {
+  background-image: url("../assets/technology/background-technology-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tech-container {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.tech__images-container {
+  left: 0;
+  width: 100%;
+  margin-bottom: 17rem;
+}
+
+.tech-image-container {
+  width: 100%;
+}
+
+.tech-image {
+  display: block;
+  width: inherit;
+  height: 170px;
+  position: absolute;
+  left: 0;
+}
+
+.tech-nums {
+  margin-top: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tech-nums button {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  outline: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: transparent;
+  color: white;
+  border: 0px;
+  margin: 0 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.tech-active {
+  background-color: white;
+  color: black;
+  outline: 1px solid white;
+}
+
+.text-container {
+  margin-top: 2rem;
+}
+
+.text-container h3 {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 200;
+  text-align: center;
+}
+
+.content-container {
+  margin-top: 0.5rem;
+  position: relative;
+}
+
+.content-container h2 {
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: "Bellefair", serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.tech-text-slide {
+  position: absolute;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.img1 {
+  background-image: url("../assets/technology/image-launch-vehicle-landscape.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.img2 {
+  background-image: url("../assets/technology/image-spaceport-landscape.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.img3 {
+  background-image: url("../assets/technology/image-space-capsule-landscape.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

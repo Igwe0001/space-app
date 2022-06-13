@@ -1,0 +1,9 @@
+@use "variables" as *;
+@use "generalStyles" as *;
+
+.tech-body {
+    background-image: url('../assets/technology/background-technology-mobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
