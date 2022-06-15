@@ -489,10 +489,9 @@ main {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
-  outline: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   background-color: transparent;
   color: white;
-  border: 0px;
   margin: 0 1rem;
   font-size: 2rem;
   cursor: pointer;
@@ -503,7 +502,7 @@ main {
 .tech-active {
   background-color: white;
   color: black;
-  outline: 1px solid white;
+  border: 1px solid white;
 }
 
 .text-container {
@@ -547,6 +546,12 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   overflow: hidden;
+}
+
+.tech-image,
+.tech-text {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .img1 {

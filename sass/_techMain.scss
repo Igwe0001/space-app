@@ -29,7 +29,9 @@
   height: 170px;
   position: absolute;
   left: 0;
+  
 }
+
 
 .tech-nums {
   margin-top: 20rem;
@@ -43,10 +45,9 @@
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
-  outline: 1px solid $downWhite;
+  border: 1px solid $downWhite;
   background-color: transparent;
   color: white;
-  border: 0px;
   margin: 0 1rem;
   font-size: 2rem;
   cursor: pointer;
@@ -62,7 +63,7 @@
 .tech-active {
   background-color: white;
   color: black;
-  outline: 1px solid white;
+  border: 1px solid white;
 }
 
 .text-container {
@@ -103,6 +104,12 @@
   justify-content: center;
   overflow: hidden;
 }
+
+.tech-image,
+.tech-text {
+  transition: all 0.3s ease;
+}
+
 
 .img1 {
   background-image: url("../assets/technology/image-launch-vehicle-landscape.jpg");
